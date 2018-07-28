@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<style type="text/css">
+			.mobile{
+				margin: 100px auto;
+				width: 193px;
+				height: 408px;
+				background: url(img/ui-phone.png);
+				overflow: hidden;
+			}
+			.box{
+				margin: 70px 0 0 20px;
+				width: 155px;
+				height: 275px;
+				overflow: hidden;			
+			}
+			ul{
+				/*930*/
+				width: 1085px;
+				height: 275px;
+			}
+			ul li{
+				width: 155px;
+				height: 275px;
+				position: relative;
+				animation: yidong 8s linear infinite;
+			}
+			ul li img{
+				float: left;
+				width: 155px;
+				height: 275px;
+			}
+			@keyframes yidong{
+				0%{left: 0px;}
+				4%{left: 0px;}
+				
+				16.67%{left: -155px;}
+				20%{left: -155px;}
+				
+				33.33%{left: -310px;}
+				37%{left: -310px;}
+				
+				50%{left: -465px;}
+				54%{left: -465px;}
+				
+				66.68%{left: -620px;}
+				70%{left: -620px;}
+				
+				83.35%{left: -775px;}
+				87%{left: -775px;}
+				
+				96%{left: -930px;}
+				100%{left: -930px;}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mobile">
+			<div class="box">
+				<ul>
+					<li><img src="img/ui01.jpg"/></li>
+					<li><img src="img/ui02.jpg"/></li>
+					<li><img src="img/ui03.jpg"/></li>
+					<li><img src="img/ui04.jpg"/></li>
+					<li><img src="img/ui05.jpg"/></li>
+					<li><img src="img/ui06.jpg"/></li>
+					<li><img src="img/ui01.jpg"/></li>
+				</ul>
+			</div>
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+			ul {
+				width: 150px;
+				height: 150px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin: -75px 0 0 -75px;
+				border: 2px solid red;
+				transform-style: preserve-3d;
+				animation: go 5s linear infinite;
+			}
+			
+			ul li{
+				width: 150px;
+				height: 150px;
+				background: dodgerblue;
+				position: absolute;
+			}
+			ul li:nth-child(1){
+				transform:translateX(-200px) rotateX(-20deg) rotateY(-100deg);
+				background-color: orange;
+			}
+			ul li:nth-child(2){
+				transform:translateX(200px) rotateX(-20deg) rotateY(-100deg);
+				background-color: green;
+			}
+			ul li:nth-child(3){
+				transform:translateZ(200px) rotateX(-20deg) rotateY(-100deg);
+				background-color: burlywood;
+			}
+			ul li:nth-child(4){
+				transform:translateZ(-200px) rotateX(-20deg) rotateY(-100deg);
+				background-color: brown;
+			}
+			ul li:nth-child(5){
+				transform: translateX(200px) translateZ(-200px) rotateX(-20deg) rotateY(-100deg);
+				background-color: greenyellow;
+			}
+			ul li:nth-child(6){
+				transform:translateX(200px) translateZ(200px) rotateX(-20deg) rotateY(-100deg);
+			}
+			
+			@keyframes go{
+				0%{transform: rotateY(0deg);}
+				100%{transform: rotateY(360deg);}
+			}
+			/*ul:hover{
+				transform:rotateY(360deg) ;
+				transition: all 5s;
+			}*/
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+</html>

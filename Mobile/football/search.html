@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>足球圈</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script type="text/javascript">
+			document.documentElement.style.fontSize=document.documentElement.clientWidth/100*31.25+"px";
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/headerAndFooter.css"/>
+		<style type="text/css">
+			header p{
+				width: 100%;
+				text-align: center;
+				font-size: 0.30rem;
+				color: white;
+			}
+			form{
+				height: .32rem;
+				line-height: .32rem;
+				width: 100%;
+				background-color: white;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+			form input{
+				height: 75%;
+				border-radius: .1rem;
+				border: none;
+			}
+			form input:nth-child(1){
+				width: 80%;
+				padding-left: .1rem;
+				box-sizing: border-box;
+				border: 1px solid #bfbfbf;
+			}
+			form input:nth-child(2){
+				width: 14%;
+				color: #fefcfe;
+				text-align: center;
+				background-color: #0bc443;
+			}
+			
+			.gray{
+				height: .05rem;
+				background-color: #f1f1f1;
+			}
+			
+			section{
+				width: 100%;
+				height: .75rem;
+			}
+			section ul li{
+				width: 100%;
+				/*display: flex;*/
+				/*flex-wrap: wrap;*/
+				height: .75rem;
+				border-bottom: 1px solid #c1c1c1;
+				position: relative;
+			}
+			section ul li .pikaqiu{
+				float: left;
+				width: .47rem;
+				height: .47rem;
+				border: 1px solid #F1F1F1;
+				border-radius: 50%;
+				background-color: yellow;
+				margin: .17rem .1rem .1rem .12rem;
+			}
+			section ul li h2{
+				/*float: left;*/
+				margin-top: .2rem;
+				font-size: .16rem;
+				margin-bottom: .05rem;
+			}
+			section ul li a{
+				display: block;
+				position: absolute;
+				top: .2rem;
+				right: .13rem;
+				width: .37rem;
+				height: .17rem;
+				line-height: .17rem;
+				background-color: #06c63f;
+				border-radius: .05rem;
+				text-align: center;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="head">
+			<header>
+				<p>发现</p>
+			</header>		
+		</div>
+		
+		<form>
+			<input type="text" placeholder="请输入昵称" required="required"/>
+			<input type="submit" value="搜索"/>
+			
+		</form>
+		
+		<div class="gray">
+			
+		</div>
+		
+		<section>
+			<ul>
+				<li>
+					<div class="pikaqiu">
+					</div>
+					<h2>我是小萌</h2>
+					<p>萌到你害怕！</p>
+					<a href="#">关注</a>
+				</li>
+				<li>
+					<div class="pikaqiu">
+					</div>
+					<h2>我是小萌</h2>
+					<p>萌到你害怕！</p>
+					<a href="#">关注</a>
+				</li>
+				<li>
+					<div class="pikaqiu">
+					</div>
+					<h2>我是小萌</h2>
+					<p>萌到你害怕！</p>
+					<a href="#">关注</a>
+				</li>
+			</ul>
+		</section>
+		
+		<footer>
+			<ul>
+				<li><a href="index-rem.html"><i class="iconfont">&#xe600;</i><b>首页</b></a></li>
+				<li><a href="attention.html" class="action-foot"><i class="iconfont">&#xe60b;</i><b>发现</b></a></li>
+				<li><a href="attention.html"><i class="iconfont">&#xe71d;</i></a></li>
+				<li><a href="index-rem.html"><i class="iconfont">&#xe61a;</i><b>我们</b></a></li>
+				<li><a href="attention.html"><i class="iconfont">&#xe652;</i><b>退出</b></a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

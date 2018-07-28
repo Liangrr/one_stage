@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>图形总绘</title>
+<style>
+ *{padding:0;margin:0;}
+ div{margin:50px auto;}
+ #lx{
+    width: 120px;
+    height: 120px;
+    background: #1eff00;
+    transform:rotate(45deg);
+} /*菱形*/
+
+#pxs{
+	width:140px;
+	height:100px;
+	background:#f0f;
+	transform:skew(30deg);
+	} /*平行四边形*/
+
+
+#talk{
+	width:150px;
+	height:100px;
+	background:#F90;
+	border-radius:20px;
+	position:relative;
+	}
+#talk:before{
+	content:"";
+	width:0;
+	height:0;
+	position:absolute;
+	left:-30px;top:35px;
+	border-right:solid 30px #F90;
+	border-top:solid 15px  transparent;
+	border-bottom:solid 15px transparent;
+	} /* 对话框 */	
+
+/* 六边形 */	
+#lbx{
+	width:150px;
+	height:80px;
+	background:#09F;
+	position:relative;
+	margin:80px auto;
+	}
+#lbx:before{
+	content:"";
+	width:0;
+	height:0;
+    position:absolute;
+	left:0;top:-50px;
+	border-bottom:solid 50px #09F;
+	border-left:solid 75px transparent;
+	border-right:solid 75px transparent;
+	}		
+#lbx:after{
+	content:"";
+	width:0;
+	height:0;
+    position:absolute;
+	top:80px;
+	border-top:solid 50px #09F;
+	border-left:solid 75px transparent;
+	border-right:solid 75px transparent;
+	}
+	
+/* 鸡蛋 */
+#egg{
+	width:100px;
+	height:150px;
+	background:#FF0;
+	border-radius:55% 55% 45% 45%;
+	}
+
+/* 心形 */
+#heart{
+	width:60px;
+	position:relative;
+	margin:50px auto;
+	}
+#heart:before,#heart:after{
+	content:"";
+	width:60px;height:110px;
+	background:#f00;
+	position:absolute;
+	border-radius:45px 45px 0 0;
+	left:60px;
+	top:0px;
+	transform:rotate(-45deg);
+	transform-origin:0 100%;
+	 }	
+#heart:after{
+	left:0;
+	transform:rotate(45deg);
+	transform-origin:100% 100%;
+	}
+		
+		
+	
+/*#pacman{margin:200px auto;width: 0px; height: 0px; border-right: 60px solid transparent; border-top: 60px solid red; border-left: 60px solid red; border-bottom: 60px solid red; border-top-left-radius: 60px; border-top-right-radius: 60px; border-bottom-left-radius: 60px; border-bottom-right-radius: 60px;}		
+*/
+
+
+/* 太极图 */
+#tj{margin:200px auto 100px;
+	width:98px;height:48px;
+	border-style:solid;
+	border-color:red;
+	border-width:2px 2px 50px 2px;
+	border-radius:100%;
+	position:relative;
+	
+	}
+#tj:before{
+	content:"";
+	position:absolute;
+	background:#000;
+	left:0;
+	top:50%;
+	width:12px;height:12px;
+	border:solid 18px red;
+	border-radius:100%;
+	
+	}
+#tj:after{
+	content:"";
+	position:absolute;
+	background:#000;
+	right:0;
+	top:50%;
+	width:12px;height:12px;
+	border:solid 19px #fff;
+	border-radius:100%;
+	
+	}
+	
+	#tj:hover{
+		transform:rotate(380deg);
+		transition:all 2s;
+		
+		}	
+
+/* 搜索符号 */
+#search{
+	width:60px;height:60px;
+	border:solid 20px red;
+	border-radius:100%;
+	position:relative;
+	}
+#search:after{
+    content:"";
+	width:20px;height:60px;background:red;
+	position:absolute;right:-30px;bottom:-50px;	
+	transform:rotate(-45deg);
+	}
+	
+/* 钻石 */		
+#zs{margin:100px auto;
+	width:0;height:0;
+	border-top:solid 60px #00F;
+	border-left:solid 50px transparent;
+	border-right:solid 50px transparent;
+	position:relative;
+	}
+
+#zs:before{content:"";
+	width:50px;height:0px;
+	border-bottom:solid 25px #00F;
+	border-left:solid 25px transparent;
+	border-right:solid 25px transparent;
+	position:absolute;
+	top:-85px;
+	left:-50px;
+	}
+#zs:after{
+	content:"";
+	width:60px;height:60px;
+	border:solid 10px #00f;
+	border-radius:100%;
+	position:absolute;
+	left:-40px;
+	top:-10px;
+	
+	}	
+
+/* 问号 */
+#w{
+	width:80px;height:80px;
+	border:solid 20px red;
+	border-bottom-color:transparent;
+	border-radius:100%;
+	transform:rotate(55deg);
+	position:relative;
+	}
+#w:before{content:"";
+	width:20px;height:80px;
+	background:red;
+	position:absolute;
+	top:53px;left:90px;
+	transform:rotate(-55deg);
+
+	}
+#w:after{
+	content:"";
+	width:40px;height:40px;
+	background:red;
+	border-radius:100%;
+	position:absolute;
+	left:120px;
+     top:100px;
+		transform:rotate(0deg);
+
+	}		
+</style>
+</head>
+
+<body>
+<div id="lx"></div>
+<div id="pxs"></div>
+<div id="talk"></div>
+<div id="lbx"></div>
+<div id="egg"></div>
+<div id="heart"></div>
+<div id="tj"></div>
+<!--<div id="pacman"></div>-->
+<div id="search"></div>
+<div id="zs"></div>
+<div id="w"></div>
+
+
+</body>
+</html>

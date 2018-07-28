@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>足球圈</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script type="text/javascript">
+			document.documentElement.style.fontSize=document.documentElement.clientWidth/100*31.25+"px";
+		</script>
+		
+		<style type="text/css">
+			header{
+				width: 100%;
+				height: 44px;
+				line-height: 44px;
+				background: #0cc440;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			header ul{
+				width: 118px;
+				height:24px;
+			}
+			header ul li{
+				width: 59px;
+				height: 24px;
+				line-height: 24px;
+				text-align: center;
+			}
+			header ul li.on{
+				background-color:#63d985;
+				border-radius: 12px 0 0 12px;	
+			}
+			header ul li.on a{
+				color: white;
+			}
+			header ul li.off{
+				background-color:#3dd066;
+				border-radius:0 12px 12px 0;	
+			}
+			header ul li.off a{
+				color: #f0f0f0;
+			}
+			
+			nav{
+				height: 35px;
+				line-height: 35px;
+				width: 100%;
+				background-color: rgba(255,255,255,0.3);
+			}
+			nav ul{
+				border-bottom: 1px solid #d9d9d9;
+				display: flex;
+			}
+			nav ul li{
+				text-align: center;
+				flex: 1;
+			}
+			nav ul li a{
+				color:#696969;
+			}
+			nav ul li.action{
+				border-bottom: 2px solid #3dd066;
+			}
+			
+			section{
+				width: 100%;
+			}
+			section ul{
+				margin-top: 4px;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			section ul li{
+				margin-top: 4px;
+				margin-bottom: 1px;
+				width: 50%;
+				box-sizing: border-box;
+			}
+			section ul li:nth-child(2n+1){
+				padding-right: 5px;
+			}
+			section ul li:nth-child(2n){
+				padding-left: 5px;
+			}
+			section ul li a{
+				display: block;
+				box-sizing: border-box;
+				color: black;
+				border: 1px solid gray;
+			}
+			section ul li a img{
+				width: 100%;
+				box-sizing: border-box;
+				border-bottom:1px solid gray;
+			}
+			
+			footer{
+				width: 100%;
+				height: 44px;
+				line-height: 44px;
+				text-align: center;
+				border-top: 1px solid gray;
+			}
+			footer ul{
+				margin-top: 5px;
+				display: flex;
+				justify-content: space-around;
+				position: relative;
+			}
+			footer ul li{
+				height: 44px;
+				line-height: 44px;
+			}
+			footer ul li a{	
+				display: block;
+				height: 44px;
+				line-height: 44px;				
+				color: #d5d7d6;
+			}
+			footer ul li a i,
+			footer ul li a b{
+				display: block;
+				height: 16px;
+				line-height: 16px;
+			}
+			footer ul li:nth-child(3){
+				width: 48px;
+				height: 48px;
+				border: 1px solid grey;
+				border-radius: 50%;
+				position: relative;
+				top: -10px;
+				background-color: white;
+			}
+			footer ul li:nth-child(3) a i{
+				position: relative;
+				top: 15px;
+				font-size: 25px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<ul>
+				<li class="on"><a href="#">热点</a></li>
+				<li class="off"><a href="#">关注</a></li>
+			</ul>
+		</header>
+		<nav>
+			<ul>
+				<li class="action"><a href="#">足球生活</a></li>
+				<li><a href="#">足球生活</a></li>
+				<li><a href="#">足球生活</a></li>
+			</ul>
+		</nav>
+		<section>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="img/index_0_03.jpg"/>
+						<p>小狗啊，单身不重要</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/index_0_03.jpg"/>
+						<p>小狗啊，单身不重要</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/index_0_03.jpg"/>
+						<p>小狗啊，单身不重要</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/index_0_03.jpg"/>
+						<p>小狗啊，单身不重要</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/index_0_03.jpg"/>
+						<p>小狗啊，单身不重要</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/index_0_03.jpg"/>
+						<p>小狗啊，单身不重要</p>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<footer>
+			<ul>
+				<li><a href="#"><i class="iconfont">&#xe600;</i><b>首页</b></a></li>
+				<li><a href="#"><i class="iconfont">&#xe60b;</i><b>发现</b></a></li>
+				<li><a href="#"><i class="iconfont">&#xe71d;</i></a></li>
+				<li><a href="#"><i class="iconfont">&#xe61a;</i><b>我们</b></a></li>
+				<li><a href="#"><i class="iconfont">&#xe652;</i><b>退出</b></a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

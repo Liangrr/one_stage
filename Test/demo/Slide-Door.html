@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<style type="text/css">
+			ul{
+				height: 42px;
+				line-height: 42px;
+				margin: 0 auto;
+				text-align: center;
+				background-color: yellow;
+			}
+			ul li{
+				float: left;
+				height: 42px;
+				margin-left: 10px;
+			}
+			ul li a{
+				float: left;
+				padding-left: 4px;
+				background: url(img/left.gif) no-repeat;
+			}
+			ul li a span{
+				float: left;
+				padding-right: 4px;
+				background: url(img/right.gif) no-repeat right 0;
+			}
+			ul li:hover a{
+				background: url(img/left.gif) no-repeat 0 -42px;
+			}
+			ul li:hover a span{
+				background: url(img/right.gif) no-repeat right -42px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a href="#"><span>傻屌无聊</span></a></li>
+			<li><a href="#"><span>傻屌</span></a></li>
+			<li><a href="#"><span>傻屌啥子列</span></a></li>
+		</ul>
+	</body>
+</html>

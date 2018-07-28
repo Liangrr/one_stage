@@ -1,0 +1,41 @@
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			a {
+				text-decoration: none;
+				color: black;
+			}
+			
+			.nav-03 ul {
+				width: 500px;
+				height: 50px;
+				background-color: pink;
+			}
+			
+			.nav-03 ul li {
+				float: left;
+				list-style: none;
+				text-align: center;
+				width: 100px;
+				height: 50px;
+				line-height: 50px;
+				border-right: 1px solid black;
+			}
+			
+			.nav-03 ul li a {
+				padding: 18px 34px;
+			}
+			
+			.nav-03 ul li a:nth-child(1) {
+				display: none;
+			}
+			
+			.nav-03 ul li:hover a:nth-child(2) {
+				display: none;
+			}
+			
+			.nav-03 ul li:hover a:nth-child(1) {
+				display: inline;
+			}

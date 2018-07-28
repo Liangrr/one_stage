@@ -1,0 +1,140 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	background-color: #f5f5f5;
+}
+.header{
+	width: 1190px;
+	height: 35px;
+	line-height: 35px;
+	margin: 0 auto;
+}
+.h-t{
+	float: left;
+	width: 210px;
+}
+.h-t span{
+	margin-left: 10px;
+}
+.h-t .h-span a{
+	color: #f23707;
+}
+.header .h-ul{
+	float: left;
+	margin-left: 402px;
+}
+.header .h-ul li{
+	float: left;
+}
+.header .h-ul li a{
+	display: block;
+	float: left;
+	padding-left: 8px;
+	padding-right: 8px;
+	height: 35px;
+	line-height: 35px;
+}
+.header .h-ul li a i{
+	padding-left: 3px;
+}
+.header .h-ul li:nth-child(2) a em{
+	color: #f23707;
+	padding-right: 5px;
+}
+.header .h-ul li:nth-child(4) span{
+	display: block;
+	height: 16px;
+	margin-top: 10px;
+	border-right: 1px solid #ccc;
+}
+.header .h-ul li a:hover{
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	color: #f23707;
+	background-color: white;
+}
+.header .h-ul li:nth-child(4):hover a span{
+	border-right: 1px solid white;
+}
+
+
+.nav{
+	height:120px;
+	background-color: white;
+}
+.nav-top{
+	width: 1190px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.nav-top img{
+	float: left;
+	margin: 30px 0 0 20px;
+	_margin-left:10px;
+}
+.nav-top form{
+	float: left;
+	margin-top: 20px;
+	margin-left: 90px;
+	_margin-left: 30px;
+	width: 635px;
+	height: 70px;
+	position: relative;
+}
+.nav-top form a{
+	display: block;
+	margin-left: 20px;
+	_margin-left: 50px;
+	width: 35px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	color: white;
+	border-radius: 4px;
+	background-color: #ff5a00;
+}
+.nav-top form .txt{
+	float: left;
+	width: 450px;
+	height: 40px;
+	line-height: 40px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border: 1px solid #ff5000;
+	padding-left: 40px;
+}
+.nav-top form .sub{
+	width: 50px;
+	height: 44px;
+	line-height: 44px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border: 1px solid #ff5000;
+	background-color: #ff5000;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	_float:left;
+	_border:none;
+}
+.nav-top form i{
+	font-size: 40px;
+	position: absolute;
+	top: 24px;
+	left:5px;
+	_top:26px;
+	_left:30px;
+}
+.nav-top ul{
+	position: absolute;
+	left: 300px;
+	top: 133px;
+}
+.nav-top ul li{
+	float: left;
+	padding-right: 10px;
+}
+.nav-top ul li a:hover{
+	color: #ff5000;
+}

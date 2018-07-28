@@ -1,0 +1,124 @@
+body,html{
+	width: 100%;
+	height: 100%;
+}
+header{
+	height: 130px;
+	width: 100%;
+	background-color: #e50010;
+}
+.head-top{
+	width: 965px;
+	height: 95px;
+	line-height: 95px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.head-top a img{
+	margin-top: 30px;
+	float: left;
+}
+.head-top form{
+	margin-top: 30px;
+	float: left;
+}
+.head-top form fieldset{
+	margin-left:155px;
+	height: 32px;
+	width: 320px;
+	border: 1px solid white;
+
+}
+.head-top form input,.head-top form select{
+	border: none;
+	float: left;
+	background: none;
+}
+.head-top form select{
+	color: white;
+	width: 88px;
+	font-size: 14px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	padding-left: 8px;
+}
+.head-top form .in{
+	width: 180px;
+	padding-left: 10px;
+	text-align: left;
+	height: 32px;
+	line-height: 32px;
+}
+.head-top form .sub{
+	width:42px;
+	height: 32px;
+	line-height: 32px;
+	background: url(../img/path_06.jpg) no-repeat 12px 7px;
+}
+
+.head-ul{
+	margin-top: 30px;
+	float: left;
+	margin-left: 25px;
+}
+.head-ul li{
+	padding-top: 10px;
+	height: 32px;
+	line-height: 32px;
+}
+.head-ul li a{
+	display: block;
+	height: 15px;
+	line-height: 15px;
+	text-align: center;
+	padding: 0 8px;
+	color: white;
+	border-left: 1px solid orange;
+	border-right: 1px solid white;
+}
+.head-ul li:first-child a{
+	border-left: none;
+}
+.head-ul li:last-child a{
+	border-right: none;
+}
+
+nav{
+	width:965px;
+	height: 35px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+nav .nav-ul li a{
+	display: block;
+	color: white;
+	padding: 9px;
+	height: 35px;
+}
+nav .nav-ul li:hover a{
+	color: black;
+	background-color: white;
+}
+.head-ul:nth-child(2){
+	position: relative;
+	top: -30px;
+	left: 150px;
+}
+
+section{
+	
+	width: 100%;
+	height: 470px;
+	background: url(../img/banner-03.jpg) no-repeat;
+}
+.section-t{
+	width: 965px;
+	margin: 0 auto;
+	position: relative;
+}
+.section-t .s-t-ul{
+	position: absolute;
+	top: 308px;
+	left: 0;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body,html,form,fieldset,caption,input,select,option{
+				padding: 0;
+				margin: 0;
+				border: none;
+				/*display: block;*/
+			}
+			
+			form{
+				margin: 0 auto;
+				width: 470px;
+				height: 808px;
+				border-radius:3%;
+				border: 3px solid white;
+				background-color: #9cbc2c;
+			}			
+			fieldset{
+				width: 420px;
+				margin-left: 20px;
+			}
+			label{
+				display: block;
+				margin-top: 5px;
+				width: 420px;
+				height: 45px;
+				line-height: 45px;
+				border-radius: 5px;
+				border: 1px solid white;
+				background-color: #bad06b;
+				/*text-align: center;*/
+			}
+			input{
+				width: 200px;
+				height: 28px;
+				/*margin-right: 10px;*/
+				border-radius: 3px;
+			/*	background: none;*/
+			}
+			.c-b{
+				width: 20px;
+				height: 20px;
+			}
+			textarea{
+				resize: none;
+			}
+			.btn{
+				margin-left: 135px;
+				margin-top: 10px;
+				width: 150px;
+				height: 35px;
+				line-height: 35px;
+				text-align: center;
+				border-radius: 10px;
+				background-color: #3a4612;
+			}
+			legend{
+				font-weight: 600;
+				padding-top: 10px;
+			}
+			.text{
+				width: 120px;
+				float: left;
+				padding-left: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Step1:Your details</legend>
+			
+				<label><div class="text">Name</div><input type="text" placeholder="First and last name" required="required"/></label>
+			
+				<label><div class="text">Email</div><input type="email" placeholder="example@demo.com" /></label>
+			
+				<label><div class="text">Phone</div><input type="number" placeholder="Eg +13419283793" /></label>
+			</fieldset>
+			<fieldset>
+				<legend>Step2:Delivery address</legend>
+			
+				<label><div class="text">Address</div><textarea></textarea></label>
+			
+				<label><div class="text">Post code</div><input type="text" /></label>
+			
+				<label><div class="text">Country</div><input type="text"  /></label>
+			</fieldset>
+			<fieldset>
+				<legend>Step3:Card details</legend>
+			
+				<label><div class="text">Card number</div>
+				<input type="checkbox" class="c-b"/>VISA
+				<input type="checkbox" class="c-b"/>VISA
+				<input type="checkbox" class="c-b"/>VISA</label>
+			
+				<label><div class="text">Security code</div>
+				<select>
+					<option>什么来的</option>
+					<option>我也不知</option>
+					<option>一脸蒙逼</option>
+				</select></label>
+				
+				<label><div class="text">Name on card</div><input type="text" placeholder="Exact name as on the card" /></label>
+				<input type="submit" value="BUT IT!" class="btn"/>
+			</fieldset>
+		</form>
+	</body>
+</html>

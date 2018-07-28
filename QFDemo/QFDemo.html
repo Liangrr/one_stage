@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			#wrap{
+				margin: 0 auto;
+				width: 1001px;
+				
+				background-color: darkcyan;
+			}
+			#wrap .nav{
+				height: 62px;
+				background-color: #242424;
+				
+			}
+			#wrap .nav img{
+				float: left;
+				padding: 10px 20.5px;
+			}
+			#wrap .nav ul{
+				list-style: none;
+				
+			}
+			#wrap .nav ul li{
+				float: left;
+				width: 85px;
+				height: 62px;
+				line-height: 62px;
+				text-align: center;
+				padding:0 2px;
+				background:url(img/boundary_03.jpg) no-repeat 87.5px 23px;
+			}
+			#wrap .nav ul .the-last{
+				
+				background-image: none;
+			}
+			#wrap .nav ul li:hover{
+				background-color: orange;
+				background-image: none;
+			}
+			
+			
+			#wrap .nav ul li a{
+				text-decoration: none;
+				color: white;
+				font-size: 14px;
+			}
+			
+			#wrap .title{
+				height: 420px;
+				background-color: burlywood;
+			}
+			#wrap .title>img{
+				
+				width: 1001px;
+			}
+			
+			#wrap .main{
+				height:330px;
+				background-color: #f5f5f5;
+				
+			}
+			#wrap .main div{
+				width: 249px;
+				height: 330px;	
+				text-align: center;
+				float: left;
+				border-right:1px solid #e1e2f6 ;
+			}
+			#wrap .main div img{
+				margin-top: 50px;
+			}
+			#wrap .main div h3{
+				height: 40px;
+				line-height: 50px;
+			}
+			#wrap .main div span{
+				display: block;
+				font-size: 12px;
+				height: 40px;
+				line-height: 30px;
+				color:#50707d;
+			}
+			#wrap .main div ul{
+				list-style: none;
+			}
+			#wrap .main div ul li{
+				font-size: 12px;
+				color:#aacfdf;
+			}
+			
+			#wrap .forum{
+				height: 308px;
+				background-color: #fff;
+			}
+			#wrap .forum div{
+				float: left;
+			}
+			#wrap .forum .forum-left img{
+				padding: 40px 0px;
+				width: 300px;
+				height: 225px;
+			}
+			#wrap .forum .forum-center{
+				margin-top: 40px;
+				margin-left: 10px;
+				width: 340px;
+				height: 225px;
+				border-right:1px solid #E1E2F6;
+			}
+			#wrap .forum .forum-center div,#wrap .forum .forum-center div h2,
+			#wrap .forum .forum-center div h4,#wrap .forum .forum-center div p{
+					margin-top: 10px;
+			}
+			#wrap .forum .forum-center div{
+				width: 340px;
+				height: 100px;
+				border-bottom:1px dotted #E1E2F6 ;
+			}
+			#wrap .forum .forum-center div p{
+				text-indent: 2em;
+				font-size: 14px;
+				height: 20px;
+				line-height: 20px;
+				margin-bottom: 8px;
+			}
+			#wrap .forum .forum-center ul{
+				width: 340px;
+				height: 125px;
+				list-style: none;
+			}
+			#wrap .forum .forum-center ul li{
+				font-size: 14px;
+				margin: 10px 0px 10px 15px;
+			}
+			#wrap .forum .forum-right{
+				width: 340px;
+				height: 225px;
+				margin-top: 40px;
+				margin-left: 10px;
+			}
+			#wrap .forum .forum-right h1,#wrap .forum .forum-right h2{
+				margin: 10px 5px;
+			}
+			#wrap .forum .forum-right p{
+				margin-top: 5px;
+				margin-left: 5px;
+			}
+			#wrap .forum .forum-right a{
+				text-decoration: none;
+				color: white;
+				width: 100px;
+				height: 25px;
+				line-height: 20px;
+				background-color: orange;
+				margin-left: 15px;
+			}
+			
+			
+			#wrap .joinus{
+				height: 215px;
+				background-color: #232323;
+				
+			}
+			#wrap .joinus div{
+				float: left;
+			}
+			#wrap .joinus .joinus-left{
+				width: 493px;
+				height: 215px;
+				color: white;
+				
+			}
+			#wrap .joinus .joinus-left dl{
+				margin-left: 10px;
+				padding-top: 45px;
+				float: left;
+				margin-right: 20px;
+			}
+			#wrap .joinus .joinus-left dl dt{
+				margin-bottom: 20px;
+			}
+			#wrap .joinus .joinus-left dl dd{
+				color: #ccc;
+				padding-top: 10px;
+			}
+			#wrap .joinus .joinus-center{
+				margin-top: 30px;
+				margin-left: 20px;
+			}
+			#wrap .joinus .joinus-right{
+				margin-left: 50px;
+				margin-top: 30px;
+				
+			}
+			
+			
+			
+			#wrap .copyright{
+				height: 45px;
+				background-color: #0f0f0f;
+			}
+			#wrap .copyright p{
+				height: 45px;
+				line-height: 45px;
+				text-align: center;
+				color:#9c9c9c;
+			}
+			#wrap .copyright p a{
+				text-decoration: none;
+				color:#9c9c9c ;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div class="nav">
+				<img src="img/qfdemo_03.jpg"/>
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">走进千峰</a></li>
+					<li><a href="#">人才服务</a></li>
+					<li><a href="#">千锋教育</a></li>
+					<li><a href="#">好程序员</a></li>
+					<li><a href="#">扣丁学堂</a></li>
+					<li><a href="#">程序外包</a></li>
+					<li><a href="#">培训服务</a></li>
+					<li class="the-last"><a href="#">创业孵化</a></li>
+				</ul>
+			</div>
+			<div class="title">
+				<img src="img/qfdemo_07.jpg"/>
+			</div>
+			<div class="main">
+				<div>
+					<img src="img/qfdemo_10.jpg"/>
+					<h3>移动产业</h3>
+					<span>国内最大移动互联网开发人才提供平台</span>
+					<ul>
+						<li>精准高效的人才匹配</li>
+						<li>专业多样的招聘平台</li>
+						<li>覆盖全国的优质资源</li>
+					</ul>
+				</div>
+				<div>
+					<img src="img/qfdemo_10.jpg"/>
+					<h3>移动产业</h3>
+					<span>国内最大移动互联网开发人才提供平台</span>
+					<ul>
+						<li>精准高效的人才匹配</li>
+						<li>专业多样的招聘平台</li>
+						<li>覆盖全国的优质资源</li>
+					</ul>
+				</div>
+				<div>
+					<img src="img/qfdemo_10.jpg"/>
+					<h3>移动产业</h3>
+					<span>国内最大移动互联网开发人才提供平台</span>
+					<ul>
+						<li>精准高效的人才匹配</li>
+						<li>专业多样的招聘平台</li>
+						<li>覆盖全国的优质资源</li>
+					</ul>
+				</div>
+				<div>
+					<img src="img/qfdemo_10.jpg"/>
+					<h3>移动产业</h3>
+					<span>国内最大移动互联网开发人才提供平台</span>
+					<ul>
+						<li>精准高效的人才匹配</li>
+						<li>专业多样的招聘平台</li>
+						<li>覆盖全国的优质资源</li>
+					</ul>
+				</div>
+			</div>
+			<div class="forum">
+				<div class="forum-left">
+					<img src="img/qfdemo_13.jpg"/>
+				</div>
+				<div class="forum-center">
+					<div>
+						<h2>动态新闻</h2>
+						<h4>你在千锋学习，百度有钱出钱</h4>
+						<p>为了谁看了几次lad旅客岁大寿卡桑德拉上看到了</p>					
+					</div>
+					<ul>
+						<li>萨迪克拉撒路阿斯利康多家阿萨德</li>
+						<li>萨迪克拉撒路阿斯利康多家阿萨德</li>
+						<li>萨迪克拉撒路阿斯利康多家阿萨德</li>
+						<li>萨迪克拉撒路阿斯利康多家阿萨德</li>
+					</ul>
+
+				</div>
+				<div class="forum-right">
+					<h2>与我们洽谈</h2>
+					<img src="img/qfdemo_16.jpg"/><a href="#">点击咨询</a>
+					<img src="img/qfdemo_16.jpg"/><a href="#">点击咨询</a>
+					<h1>400-5654-7878</h1>
+					<p>培训咨询:400-5654-7878</p>
+					<p>培训咨询:400-5654-7878</p>
+					<p>培训咨询:400-5654-7878</p>
+					<p>培训咨询:400-5654-7878</p>
+				</div>
+			</div>
+			<div class="joinus">
+				<div class="joinus-left">
+					<dl>
+						<dt>走进千锋</dt>
+						<dd>千锋简介</dd>
+						<dd>千锋之路</dd>
+						<dd>联系我们</dd>
+					</dl>
+					<dl>
+						<dt>走进千锋</dt>
+						<dd>千锋简介</dd>
+						<dd>千锋之路</dd>
+						<dd>联系我们</dd>
+					</dl>
+					<dl>
+						<dt>走进千锋</dt>
+						<dd>千锋简介</dd>
+						<dd>千锋之路</dd>
+						<dd>联系我们</dd>
+					</dl>
+					<dl>
+						<dt>走进千锋</dt>
+						<dd>千锋简介</dd>
+						<dd>千锋之路</dd>
+						<dd>联系我们</dd>
+					</dl>
+					<dl>
+						<dt>走进千锋</dt>
+						<dd>千锋简介</dd>
+						<dd>千锋之路</dd>
+						<dd>联系我们</dd>
+					</dl>
+				</div>
+				<div class="joinus-center">
+					<img src="img/qfdemo_24.jpg"/>
+				</div>
+				<div class="joinus-right">
+					<img src="img/qfdemo_21.jpg"/>
+				</div>
+				
+			</div>
+			<div class="copyright">
+				<p>Copyright 2011-2015 <a href="http://www.1000phone.com/" rel="nofollow" target="_blank" title="千锋互联">
+					北京千锋互联科技有限公司</a> 京ICP备12003911号-3 京公网安备11010802011455号
+            </p>
+
+			</div>
+		</div>
+	</body>
+</html>

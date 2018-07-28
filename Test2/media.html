@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<meta name="" content=""/>
+		<style type="text/css">
+			header{
+				margin: 0 auto;
+				height: 250px;
+				background: url(img/top-bg.png) no-repeat #9b8461;
+				background-size: auto 250px; 
+			}
+			.head{
+				margin: 0 auto;
+				height: 50px;
+				background: url(img/logo.png) no-repeat left #5b5245;
+				background-size: auto 50px ;
+			}
+			.head-ul{
+				margin-left: 30%;
+				/*text-align: center;*/
+				float: left;
+			}
+			.head-ul li{
+				padding: 15px;
+			}
+			.head-ul li a{
+				font-size: 16px;
+				color: white;
+			}
+			.sub{
+				float: right;
+				display: block;
+				height: 50px;
+				line-height: 50px;
+				margin-right: 10px;
+				font-size: 16px;
+				color: white;
+			}
+			nav{
+				height:30%;
+				display: flex;
+				justify-content:  space-between;
+			}
+			nav .nav-img{
+				box-sizing: border-box;
+				padding: 10px;
+				width:50%;
+			}
+			nav .r{
+				box-sizing: border-box;
+				display: block;
+				float: right;
+				padding: 10px;
+				height:100%;
+				width: 50%;
+			}
+			nav .r img{
+				float: left;
+				width: 50%;
+				height: 100%;
+			}
+			
+			section .s-ul{
+				display: flex;
+				justify-content: space-around;
+				flex-wrap: wrap;
+			}
+			section .s-ul li{
+				padding: 10px;
+			}
+			section .s-ul li img{
+				display: block;
+				border: 1px solid #CCCCCC;
+				box-shadow: 0 0 5px 2px #ccc;
+			}
+			
+			@media only screen  and (max-width: 640px) {
+				nav .nav-img{
+				width:100%;
+				}
+				nav .r{
+					display: none;
+				}
+				.head-ul{
+					display: none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="head">
+				<ul class="head-ul">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">啥子</a></li>
+					<li><a href="#">李子</a></li>
+					<li><a href="#">噢噢</a></li>
+					<li><a href="#">挂了</a></li>
+					<li><a href="#">好走</a></li>
+				</ul>
+				<a href="#" class="sub">登录</a>
+			</div>
+		</header>
+		<nav>
+			<img class="nav-img" src="img/ss.jpg"/>
+			<div class="r">
+				<img src="img/1.png"/>
+				<img src="img/2.png"/>
+			</div>
+		</nav>
+		<section>
+			<ul class="s-ul">
+				<li><img src="img/1.jpg"/></li>
+				<li><img src="img/2.jpg"/></li>
+				<li><img src="img/3.jpg"/></li>
+				<li><img src="img/4.jpg"/></li>
+				<li><img src="img/5.jpg"/></li>
+				<li><img src="img/6.jpg"/></li>
+				<li><img src="img/1.jpg"/></li>
+				<li><img src="img/2.jpg"/></li>
+				<li><img src="img/3.jpg"/></li>
+				<li><img src="img/4.jpg"/></li>
+				<li><img src="img/5.jpg"/></li>
+			</ul>
+		</section>
+	</body>
+</html>

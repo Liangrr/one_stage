@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			a{
+				text-decoration: none;
+				color: black;
+				font-size: 14px;
+			}
+			#wl,#wl .second{
+				width: 1000px;
+				
+				position: absolute;
+			}
+			#wl .first{
+				height: 100px;
+				line-height: 100px;
+			}
+			#wl .first img{
+				margin-left: 20px;
+			}
+			#wl .first input{
+				position: relative;
+				top: -5px;
+				left: 460px;
+				width: 230px;
+				height: 25px;
+				background-color: #f1f1f1;
+				background-image: url(img/demo_023_03.jpg);
+				background-repeat: no-repeat;
+				background-position: 205px 3px;
+			}
+			
+			#wl .second{
+				height: 60px;
+				line-height: 60px;
+				background-color: black;
+			}
+			#wl .second ul{
+				list-style: none;
+			}
+			#wl .second ul li{
+				float: left;
+				border-right-width: 1px;
+				border-right-style: dotted;
+				border-right-color: #777;
+			}
+			#wl .second ul li a{
+				margin-left: 29px;
+				margin-right: 28px;
+				text-decoration: none;
+				color: white;
+			}
+			#wl .second ul li:nth-child(8){
+				border-right-style: none;
+			}
+			
+			#wl .third{
+				height: 463px;
+			}
+			
+			#wl .fourth{
+				height: 240px;
+				
+			}
+			#wl .fourth div{
+				float: left;
+				margin-left:30px;
+			}
+			#wl .fourth .news ul li{
+				height: 28px;
+				line-height: 28px;
+			}
+			#wl .fourth .introduce{
+				width: 240px;
+				height: 240px;
+				padding-left: 25px;
+				padding-right: 15px;
+				
+				background-color: #f1f1f1;
+			}
+			#wl .fourth .introduce p:nth-of-type(1){
+				padding-top: 15px;
+				height: 25px;
+			}
+			#wl .fourth .introduce p:nth-of-type(2){
+				padding-top: 5px;
+				padding-bottom: 25px;
+				height: 25px;
+			}
+			
+			#wl .fourth .introduce span{
+				height: 35px;
+				line-height: 15px;
+				font-size: 10px;
+			}
+			#wl .fourth .talent{
+				width: 260px;
+				height: 240px;
+			}
+			#wl .fourth .talent p{
+				font-size: 10px;
+				height: 20px;
+				line-height: 20px;
+			}
+			#wl .fourth .talent img:nth-of-type(2){
+				width: 75px;
+				height: 105px;
+				margin-left: 80px;
+				margin-top: 20px;
+			}
+			#wl .fourth div h3{
+				height: 60px;
+				line-height: 70px;
+			}
+			#wl .fourth .news ul li{
+				width:370px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			
+			#wl .fifth{
+				height: 250px;
+				margin-top: 10px;
+			}
+			#wl .fifth h2{
+				margin-left: 40px;
+			}
+			#wl .fifth ul{
+				margin-top: 20px;
+				height: 250px;
+				list-style: none;
+			}
+			#wl .fifth ul li{
+				margin-left: 40px;
+				margin-right: 30px;
+				width: 250px;
+				float: left;
+				height: 200px;
+			}
+			#wl .fifth ul li img{
+				width: 250px;
+			}
+			#wl .fifth ul li span{
+				display: block;
+				height: 30px;
+				font-size: 14px;
+				line-height:30px;
+				width: 250px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			
+			#wl .sixth{
+				height: 240px;
+				background-color: #e5e5e5;
+			}
+			#wl .sixth div{
+				float: left;
+				margin: 25px;
+				height: 200px;
+			}
+			#wl .sixth div ul{
+				list-style: none;
+			}
+			#wl .sixth div h3{
+				height: 40px;
+				line-height: 40px;
+			}
+			#wl .sixth .sixth-left{
+				width: 450px;
+			}
+			#wl .sixth .sixth-left ul,#wl .sixth .sixth-center ul{
+				float: left;
+				margin-top: 15px;
+			}
+			#wl .sixth .sixth-left ul li,#wl .sixth .sixth-center ul li{
+				margin: 0px 65px 0 5px;
+			}
+			#wl .sixth .sixth-left ul li a,#wl .sixth .sixth-center ul li a{
+				height: 24px;
+				line-height: 24px;
+				padding-left: 10px;
+				background: url(img/arrows_03.jpg) no-repeat 0px 5px;
+			}
+			#wl .sixth .sixth-right img{
+				margin: 20px 0px 0px 20px;
+			}
+			
+			#wl .sixth .sixth-center{
+				width: 150px;
+			}
+			#wl .sixth .sixth-right{
+				width: 250px;
+			}
+			
+			#wl .foot-txt{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wl">
+			<div class="first">
+				<img src="img/demo_03.jpg"/>
+				<input type="text" name="" id="" value="" placeholder="SEARCH..."/>
+			</div>
+			<div class="second">
+				<ul>
+					<li><a href="#">集团介绍</a></li>
+					<li><a href="#">产品中心</a></li>
+					<li><a href="#">卧龙市场</a></li>
+					<li><a href="#">技术研发</a></li>
+					<li><a href="#">国际合作</a></li>
+					<li><a href="#">投资者关系</a></li>
+					<li><a href="#">新闻资讯</a></li>
+					<li><a href="#">人力资源</a></li>
+				</ul>
+			</div>
+			<div class="third">
+				<img src="img/demo_02.jpg"/>
+			</div>
+			
+			<div class="fourth">
+				<div class="news">
+					<h3>新闻资讯</h3>
+					<ul>
+						<li>陈建董事长出席ATB集团召开年度销售大会1团召开年度销售</li>
+						<li>陈建董事长出席ATB集团召开年度销售大会2</li>
+						<li>陈建董事长出席ATB集团召开年度销售大会3</li>
+						<li>陈建董事长出席ATB集团召开年度销售大会4团召开</li>
+						<li>陈建董事长出席ATB集团召开年度销售大会5团召开年度销售团召开年度销售</li>
+						<li>陈建董事长出席ATB集团召开年度销售大会6</li>
+					</ul>
+				</div>
+				<div class="introduce">
+					<h3>卧龙介绍</h3>
+					<p>公司成立于1984年，</p>
+					<p>经近30年的奋战</p>
+					<span>已成为电气制造，房地生产和金融投资三业并举的综合性跨国...</span>
+				</div>
+				<div class="talent">
+						<h3>人才招聘</h3>
+						<p>培养一流的人才，铸造一流的工程和实现员工与企业的共同发展</p>
+						<img src="img/demo00_06.jpg" />
+						<img src="img/demo00_03.jpg"/>
+				</div>
+			</div>
+			<div class="fifth">
+				<h2>卧龙市场</h2>
+				<ul>
+					<li>
+						<img src="img/demo_11.jpg"/>
+						<span>交通轨道：由于主要采用电气牵引，而且轮轨摩擦阻力较小，与公共气牵引，而且轮</span>
+					</li>
+					<li>
+						<img src="img/demo_11.jpg"/>
+						<span>交通轨道：由于主要采用电气牵引，而且轮轨摩擦阻力较小，与公共气牵引，而且轮</span>
+					</li>
+					<li>
+						<img src="img/demo_11.jpg"/>
+						<span>交通轨道：由于主要采用电气牵引，而且轮轨摩擦阻力较小，与公共...</span>
+					</li>
+					
+					
+				</ul>
+			</div>
+			<div class="sixth">
+				<div class="sixth-left">
+					<h3>产品中心</h3>
+					<hr />
+					<ul>
+						<li><a href="#">汽车电机</a></li>
+						<li><a href="#">日用电机</a></li>
+						<li><a href="#">特种电机</a></li>
+						<li><a href="#">大功率电机</a></li>
+						<li><a href="#">电工设备</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">汽车电机</a></li>
+						<li><a href="#">日用电机</a></li>
+						<li><a href="#">特种电机</a></li>
+						<li><a href="#">大功率电机</a></li>
+						<li><a href="#">电工设备</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">汽车电机</a></li>
+						<li><a href="#">日用电机</a></li>
+						<li><a href="#">特种电机</a></li>
+						<li><a href="#">大功率电机</a></li>
+						<li><a href="#">电工设备</a></li>
+					</ul>
+				</div>
+				<div class="sixth-center">
+					<h3>技术研发</h3>
+					<hr />
+					<ul>
+						<li><a href="#">汽车电机</a></li>
+						<li><a href="#">日用电机</a></li>
+						<li><a href="#">特种电机</a></li>
+						<li><a href="#">大功率电</a></li>
+					</ul>
+				</div>
+				<div class="sixth-right">
+					<h3>营销网络</h3>
+					<hr />
+					<img src="img/demo_15.jpg"/>
+				</div>
+			</div>
+			<div class="foot-txt">&copy; 2014 卧龙控股集团  浙ICP备06005901号 
+	 		<a target="_blank" href="#" >
+	 			<p>浙公网安备 33060402000406号</p></a>
+			</div>
+			
+		</div>
+	</body>
+</html>

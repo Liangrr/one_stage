@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.photo{
+				width: 530px;
+				height: 408px;
+				background-color: #666666;
+				position: relative;
+			}
+			.photo .photo-large{
+				width: 400px;
+				height: 300px;
+				position: absolute;
+				top: 60px;
+				left: 20px;
+				overflow: hidden;
+			}
+			.photo .photo-large ul li{
+				list-style: none;
+				
+			}
+			.photo .photo-large img{
+				width: 400px;
+				height: 300px;
+			}
+			.photo .photo-small{
+				width: 75px;
+				height: 300px;
+				overflow: scroll;
+				position: absolute;
+				top: 60px;
+				left: 425px;
+			}
+			.photo .photo-small img{
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="photo">
+
+			<div class="photo-large">
+				<ul>
+					<li><img src="point/mn1.jpg" id="pic1"/></li>
+					<li><img src="point/mn2.jpg" id="pic2"/></li>
+					<li><img src="point/mn3.jpg" id="pic3"/></li>
+					<li><img src="point/mn4.jpg" id="pic4"/></li>
+					<li><img src="point/mn5.jpg" id="pic5"/></li>
+					<li><img src="point/mn6.jpg" id="pic6"/></li>
+					<li><img src="point/mn7.jpg" id="pic7"/></li>
+					<li><img src="point/mn8.jpg" id="pic8"/></li>
+				</ul>
+			</div>
+			<div class="photo-small">
+				<a href="#pic1"><img src="point/c1.jpg"/></a>
+				<a href="#pic2"><img src="point/c2.jpg"/></a>
+				<a href="#pic3"><img src="point/c3.jpg"/></a>
+				<a href="#pic4"><img src="point/c4.jpg"/></a>
+				<a href="#pic5"><img src="point/c5.jpg"/></a>
+				<a href="#pic6"><img src="point/c6.jpg"/></a>
+				<a href="#pic7"><img src="point/c7.jpg"/></a>
+				<a href="#pic8"><img src="point/c8.jpg"/></a>
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<style type="text/css">
+			div{
+				width: 400px;
+				height: 400px;
+				overflow: hidden;
+				float: left;
+				border: 5px solid dodgerblue;
+			}
+			.box1{
+				position: relative;
+			}
+			.box1:hover,.box1:hover img,
+			.box1:hover h2,.box1:hover p{
+				transition: all 1s;
+			}
+			.box1:hover{
+				opacity: 0.5;
+			}
+			.box1:hover img{
+				transform: translateX(-50px);
+			}
+			.box1 h2{
+				position: absolute;
+				left: 20px;
+				bottom: 50px;
+				color: white;
+			}
+			.box1:hover h2{
+				transform: translateY(-50px);
+			}
+			.box1 p{
+				position: absolute;
+				bottom: -20px;
+				left: 20px;
+				color: white;
+			}
+			.box1:hover p{
+				transform: translateY(-80px);
+			}
+			
+			
+			
+			.box2{
+				position: relative;
+			}
+			.box2:hover,.box2:hover img,
+			.box2:hover h2,.box2:hover p{
+				transition: all 1s;
+			}
+			.box2:hover{
+				opacity: 0.5;
+			}
+			.box2:hover img{
+				transform: translateX(-50px);
+			}
+			.box2 h2{
+				position: absolute;
+				left: 20px;
+				top: 50px;
+				color: white;
+			}
+			.box2:hover h2{
+				transform: translateY(-20px);
+			}
+			.box2 p{
+				position: absolute;
+				top: 90px;
+				left: -100px;
+				color: white;
+				background-color: pink;
+			}
+			.box2 p:nth-of-type(2){
+				top: 120px;
+			}
+			.box2 p:nth-of-type(3){
+				top: 150px;
+			}
+			.box2:hover p{
+				transform: translateX(120px);
+			}
+			
+			
+			.box3{
+				position: relative;
+			}
+			.box3:hover,.box3:hover p{
+				transition: all 1s;
+			}
+			.box3:hover{
+				opacity: 0.5;
+			}
+			.box3 h2{
+				position: absolute;
+				left: 20px;
+				top: 50px;
+				color: white;
+			}
+			.box3 p{
+				width: 100%;
+				height: 50px;
+				position: absolute;
+				bottom: -50px;
+				left: 0px;
+				color:black;
+				background-color: white;
+			}
+			.box3:hover p{
+				transform: translateY(-50px);
+			}
+			
+			
+			.box4{
+				position: relative;
+			}
+			.box4:hover,.box4:hover img,
+			.box4:hover h2,.box4:hover p,
+			.box4:hover .beijing{
+				transition: all 1s;
+			}
+			.box4:hover{
+				opacity: 0.5;
+			}
+			.box4:hover img{
+				transform: translateX(-50px);
+			}
+			.box4 h2{
+				position: absolute;
+				left: 20px;
+				top: 30%;
+				color: transparent;
+			}
+			.box4:hover h2{
+				color: white;
+				transform: translateY(-50px);
+			}
+			.box4 p{
+				position: absolute;
+				bottom: -20px;
+				right: 20px;
+				color:black;
+				z-index: 999;
+			}
+			.box4:hover p{
+				transform: translateY(-40px);
+			}
+			.box4 .beijing{
+				border: none;
+				width: 120%;
+				height: 80px;
+				background-color: white;
+				position: absolute;
+				bottom:-80px;
+				left: 0;
+			}
+			.box4:hover .beijing{
+				transform-origin: left top; 
+				transform: rotate(-10deg);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<img src="img/pic1.jpg"/>
+			<h2>平移动画1</h2>
+			<p>文字下往上移动，图片左移</p>
+		</div>
+		
+		<div class="box2">
+			<img src="img/pic2.jpg"/>
+			<h2>平移动画2</h2>
+			<p>标题上移</p>
+			<p>文本右上移</p>
+			<p>图片左移</p>
+		</div>
+		
+		<div class="box3">
+			<img src="img/pic3.jpg"/>
+			<h2>平移动画3</h2>
+			<p>translate属性可以制作多种动画，一个简单的位置移动可以制作出多种效果，重要看制作师们能否开动想象力
+      		</p>
+		</div>
+		
+		<div class="box4">
+			<img src="img/pic4.jpg"/>
+			<h2>平移动画4</h2>
+			<p>p1p1p1</p>
+			<div class="beijing">
+				
+			</div>
+		</div>
+	</body>
+</html>

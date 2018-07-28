@@ -1,0 +1,61 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul li{
+	list-style: none;
+}
+a{
+	color: black;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+footer{
+	width: 1228px;
+	height: 35px;
+	border-bottom: 1px solid red;
+}
+footer>a{
+	display: block;
+	float: left;
+	font-size: 16px;
+	width: 120px;
+	height: 35px;
+	line-height: 30px;
+	margin-left: 6px;
+	padding-left:40px;
+	background: url(../img/jdf_03.jpg) no-repeat 0px 0px;
+}
+footer ul{
+	margin-left: 521px;
+	width: 693px;
+	margin-top: 13px;
+	height: 34px;
+	border: 1px solid #f2f2f2;
+	border-bottom: none;
+}
+footer ul li{
+	float: left;
+	text-align: center;
+	height: 34px;
+	line-height: 34px;
+}
+footer ul li:hover{
+	height: 32px;
+	border: 1px solid red;
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+	border-bottom-color:white;
+}
+footer ul li:hover a{
+	border: none;
+}
+footer ul li a{
+	padding: 0px 16px 0px 17px;
+	border-right:1px solid #ccc;
+}
+footer ul li:nth-child(9) a{
+	border-right:none;
+
+}

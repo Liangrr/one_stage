@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<style type="text/css">
+			div,ul li{
+				border: 1px solid black;
+			}
+			ul li{
+				list-style: none;
+			}
+			.person{
+				width:400px;
+				height: 500px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.person div,.shouzhi li,.shouzhi2 li,
+			.jiaozhi li,.jiaozhi2 li{
+				position: absolute;
+			}
+			.head,.yj,.yj2,.bz,.bz2,.shenti .duji,.mouth{
+				border-radius: 50%;
+			}
+			.head{
+				width: 100px;
+				height: 100px;
+				left: 150px;
+				top: 10px;
+			}
+			.yj{
+				width: 10px;
+				height: 10px;
+				left: 23px;
+				top: 30px;
+			}
+			.yj2{
+				width: 10px;
+				height: 10px;
+				left: 63px;
+				top: 30px;
+			}
+			.bz,.bz2{
+				width: 9px;
+				height: 9px;
+				border-bottom: none;
+				border-left: none;
+				border-right: none;
+				top: 50px;
+			}
+			.bz{
+				left: 50px;
+			}
+			.bz2{
+				left: 41px;
+			}
+			.mouth{
+				width: 50px;
+				height: 50px;
+				border-top: none;
+				border-left: none;
+				border-right: none;
+				left: 25px;
+				top: 33px;
+			}
+			.bozi{
+				width: 22px;
+				height: 20px;
+				border-radius: 10%;
+				border-bottom: none;
+				border-top: none;
+				left:190px;
+				top: 110px;
+				opacity: 0.3;
+			}
+			.shenti{
+				width: 140px;
+				height: 150px;
+				border-top-left-radius: 20%;
+				border-top-right-radius: 20%;
+				top: 130px;
+				left: 130px;
+			}	
+			.shenti .duji{
+				width:10px;
+				height: 10px;
+				left:65px;
+				top: 100px;
+				opacity: 0.4;
+			}
+			.shou{
+				width: 20px;
+				height: 100px;
+				border-top-left-radius: 20%;
+				border-top-right-radius: 20%;
+				top: 145px;
+				left: 110px;
+			}
+			.shouzhi li{
+				width:4px;
+				height: 10px;
+				border-top-left-radius: 20%;
+				border-top-right-radius: 20%;
+				top: 246px;
+				left: 110px;
+			}
+			.shouzhi li:nth-child(2){
+				left: 114px;
+			}
+			.shouzhi li:nth-child(3){
+				left: 118px;
+			}
+			.shouzhi li:nth-child(4){
+				left: 122px;
+			}
+			.shouzhi li:nth-child(5){
+				left: 126px;
+			}
+			
+			.shou2{
+				width: 20px;
+				height: 100px;
+				border-top-left-radius: 20%;
+				border-top-right-radius: 20%;
+				top: 145px;
+				left: 270px;
+			}
+			.shouzhi2 li{
+				width:4px;
+				height: 10px;
+				border-top-left-radius: 20%;
+				border-top-right-radius: 20%;
+				top: 246px;
+				left: 270px;
+			}
+			.shouzhi2 li:nth-child(2){
+				left: 274px;
+			}
+			.shouzhi2 li:nth-child(3){
+				left: 278px;
+			}
+			.shouzhi2 li:nth-child(4){
+				left: 282px;
+			}
+			.shouzhi2 li:nth-child(5){
+				left: 286px;
+			}
+			
+			
+			.foot{
+				width: 25px;
+				height: 90px;
+				top: 281px;
+				left: 150px;
+			}
+			.jiaozhi li{
+				width:5px;
+				height: 10px;
+				border-top-left-radius: 20%;
+				border-top-right-radius: 20%;
+				top: 372px;
+				left: 220px;
+			}
+			.jiaozhi li:nth-child(2){
+				left: 225px;
+			}
+			.jiaozhi li:nth-child(3){
+				left: 230px;
+			}
+			.jiaozhi li:nth-child(4){
+				left: 235px;
+			}
+			.jiaozhi li:nth-child(5){
+				left: 240px;
+			}
+			.foot2{
+				width: 25px;
+				height: 90px;
+				position: absolute;
+				top: 281px;
+				left: 220px;
+			}
+			.jiaozhi2 li{
+				width:5px;
+				height: 10px;
+				border-top-left-radius: 20%;
+				border-top-right-radius: 20%;
+				top: 372px;
+				left: 150px;
+			}
+			.jiaozhi2 li:nth-child(2){
+				left: 155px;
+			}
+			.jiaozhi2 li:nth-child(3){
+				left: 160px;
+			}
+			.jiaozhi2 li:nth-child(4){
+				left: 165px;
+			}
+			.jiaozhi2 li:nth-child(5){
+				left: 170px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="person">
+			<div class="head">
+				<div class="yj">
+				</div>
+				<div class="yj2">
+				</div>
+				<div class="bz">
+				</div>
+				<div class="bz2">
+				</div>
+				<div class="mouth">
+				</div>
+			</div>
+			<div class="bozi">
+			</div>
+			<div class="shenti">
+				<div class="duji"></div>
+			</div>
+			<div class="shou">
+			</div>
+			<ul class="shouzhi">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="shouzhi2">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<div class="shou2">
+			</div>
+			<div class="foot">
+			</div>
+			<div class="foot2">
+			</div>
+			<ul class="jiaozhi">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="jiaozhi2">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</body>
+</html>

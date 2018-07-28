@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+			}
+			.box{
+				background-size:50px ;
+				background-color: yellow;
+				background-image: linear-gradient(rgba(255,255,255,.8) 50%,transparent 50%);
+			}
+			.box2{
+				background-size: 50px;
+				background:white;
+				background-image: 
+					-webkit-gradient(linear, 0 0, 0 100%, color-stop(0.5, transparent), color-stop(0.5, rgba(0,200,0,0.5)), to(rgba(200, 0, 0, .5)));
+				background-image: 
+					-webkit-linear-gradient(to top, transparent 50%, rgba(0,200,0,0.5) 50%, rgba(200, 0, 0, .5));
+				background-image: 
+					-moz-linear-gradient(to top, transparent 50%, rgba(0,200,0,0.5) 50%, rgba(200, 0, 0, .5));
+				background-image: 
+					-o-linear-gradient(to top, transparent 50%, rgba(0,200,0,0.5) 50%, rgba(200, 0, 0, .5));
+				background-image: 
+					linear-gradient(to top, transparent 50%, rgba(0,200,0,0.5) 50%, rgba(200, 0, 0, .5));,
+					linear-gradient(to right,transparent 50%,rgba(0,200,0,0.5) 50%,rgba(200, 0, 0, .5));
+			}
+			
+			.box3{
+				background-color: darkgray;
+				border-radius:50% ;
+				background:radial-gradient(#4c8bf5 30px,white 10px,yellow,red);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			
+		</div>
+		<br />
+		<div class="box2">
+			
+		</div>
+		<br />
+		<div class="box3">
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+body,html,ul,li,dl,dt,dd,img,h1,h2,h3,h4,h5,span,p,form,a,
+fieldset,select,option{
+	padding: 0;
+	margin: 0;
+	/*font-size: 14px;*/
+	font-family: "微软雅黑";
+	/*color: #b1b1b1;*/
+}
+a{
+	text-decoration: none;
+}
+ul li{
+	list-style: none;
+	float:left;
+}
+img{
+	border: none;
+	display: block;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+}

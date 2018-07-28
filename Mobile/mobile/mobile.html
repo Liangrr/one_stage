@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<style type="text/css">
+			body,html{
+				height: 100%;
+			}
+			.wrap{
+				width: 100%;
+				height: 100%;
+				background-color: gray;
+				display: flex;
+				flex-direction: column;
+			}
+			header,footer{
+				height: 100px;
+				width: 100%;
+				background-color: yellow;
+			}
+			section{
+				background-color: #6495ED;
+				flex: 1;
+				display: flex;
+				flex-direction: row;
+			}
+			.left,.right{
+				width: 100px;
+				background-color: red;
+			}
+			nav{
+				flex: 1;
+				background-color: goldenrod;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<header></header>
+			<section>
+				<aside class="left"></aside>
+				<nav></nav>
+				<aside class="right"></aside>
+			</section>
+			<footer></footer>
+		</div>
+		
+	</body>
+</html>

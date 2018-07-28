@@ -1,0 +1,354 @@
+/*头部外层*/
+header{
+	width: 100%;
+	background-color: #232323;
+}
+/*头部版心*/
+header .head{
+	margin: 0 auto;
+	width: 1001px;
+	height: 62px;
+	background-color: #242424;
+}
+header .head img{
+	float: left;
+	padding: 10px 20.5px;
+}
+header .head ul li:hover ul{
+	display: block;
+}
+header .head ul{
+	list-style: none;
+	position: relative;
+}
+header .head ul li ul{
+	width:720px;
+	height:62px;
+	background-color: green;
+	display: none;
+	position: absolute;
+	top: 62px;
+	left: 200px;
+}
+header .head ul li,header .head ul li ul li{
+	float: left;
+	width: 85px;
+	height: 62px;
+	line-height: 62px;
+	text-align: center;
+	padding:0 2px;
+	background:url(../img/boundary_03.jpg) no-repeat 87px 23px;
+}
+/*提取公共代码*/
+header .head ul .the-last,
+header .head ul li:hover{
+	background: none;
+}
+header .head ul li:hover{
+	background-color: orange;
+}
+header .head ul li a{
+	color: white;
+	font-size: 14px;
+}
+/*分割线*/
+hr{
+	width: 99.8%;
+	position: absolute;
+	top: 366px;
+}
+/*标题*/
+nav{
+	width: 100%;
+	height: 265px;
+	background: url(../img/qf_03.jpg) no-repeat;
+}
+/*内容*/
+section{
+	width: 1001px;
+	margin: 0 auto;
+	height: 100%;
+}
+/*内容左边*/
+section .aside-l{
+	float: left;
+}
+/*提取公共代码*/
+/*内容左边 然后顶部---左上*/
+section .section-top ul,section .section-top ul li{
+	height: 45px;
+}
+section .section-top ul{
+	width: 250px;
+	background-color: white;
+}
+section .section-top ul li{
+	line-height: 45px;
+	padding-right: 3px;
+}
+section .section-top ul li:first-child{
+	padding-left: 30px;
+	background: url(../img/qf_06.jpg) no-repeat 2px 15px;
+}
+section .aside-l{
+	width: 222px;
+	height: 100%;
+	background: url(../img/qf_33.jpg) repeat-y;
+}
+section .aside-l .a-l-ul li a{
+	display: block;
+	width: 222px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 16px;
+	font-weight: bolder;
+	text-align: center;
+	border-bottom: 1px solid #bbb ;
+}
+section .aside-l .a-l-ul li:hover a{
+	color: white;
+	background: url(../img/qf_15.jpg) repeat-y;
+}
+
+/*内容右边*/
+section .aside-r{
+	float: left;
+	margin-left: 40px;
+	width: 735px;
+}
+/*内容右边 然后顶部---右上*/
+section .aside-r .a-r-t{
+	width: 735px;
+	height: 51px;
+	line-height: 51px;
+	border-bottom: 1px dotted #aaa;
+}
+section .aside-r .a-r-t a{
+	display: block;
+	padding-left: 30px;
+	width: 80px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 19px;
+	font-family: "微软雅黑";
+	background: url(../img/qf_14.jpg) no-repeat 6px 19px;
+	border-bottom: 2px solid orange;
+}
+/*内容右边 ---右中*/
+section .a-r-m{
+	height: 250px;
+}
+/*提取公共代码*/
+section .a-r-m .a-r-m-a,
+section .a-r-m ol li a{
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px black;
+}
+section .a-r-m .a-r-m-a{
+	margin-left: 255px;
+	margin-top: 30px;
+	width: 165px;
+	height: 60px;
+	line-height: 60px;
+	color: white;
+	background-color: #ff9a58;
+}
+section .a-r-m img{
+	margin-left: 120px;
+	margin-top: 10px;
+}
+section .a-r-m ol li a{
+	margin-left: 30px;
+	margin-top: 5px;
+	padding: 0 21px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #c0c0c0;
+}
+/*内容---右下，下面还分左右*/
+section .a-r-b{
+	width: 735px;
+	height: 383px;
+	border: 1px solid #ccc;
+}
+/*内容--右--下--左*/
+section .a-r-b-l{
+	float: left;
+	margin:20px  0 0 25px;
+}
+section .a-r-b-l p{
+	width: 200px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+section .a-r-b-l .p3{
+	display: block;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+section .a-r-b-l .phone{
+	text-align: center;
+	width: 200px;
+	height: 100px;
+	margin-left: 20px;
+}
+section .a-r-b-l .phone a img{
+	margin:20px 0 10px 70px;
+}
+section .a-r-b-l .phone mark{
+	color: red;
+	background: none;
+}
+/*内容  右--下--右（即表单）*/
+form{
+	width: 305px;
+	height: 350px;
+	float: right;
+	margin:50px 40px 0 0;
+}
+label{
+	margin-bottom: 10px;
+}
+/*提取公共代码*/
+.name,input{
+	height: 35px;
+}
+.name{
+	float: left;
+	width: 90px;
+	line-height: 35px;
+	text-align: right;
+	color: #999999;
+	padding-right: 10px;
+}
+input{
+	width: 200px;
+	margin-bottom: 10px;
+	background: none;
+	border: 1px solid #ccc;
+	background: url(../img/qf_29.jpg) no-repeat 170px 10px;
+}
+.sub{
+	float: right;
+	background: none;
+	background-color: #ff9a58;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/*提取公共代码*/
+/*插入文本*/
+article,article .joinus{
+	background-color:#232323;
+}
+article{
+	clear: both;
+	width: 100%;
+}			
+article .joinus{
+	width: 1001px;
+	margin: 0 auto;
+	height: 215px;
+	
+}
+/*提取公共代码*/
+article .joinus div,
+article .joinus .joinus-left,
+article .joinus .joinus-left dl{
+	float: left;
+}
+article .joinus .joinus-left{
+	width: 493px;
+	height: 215px;
+}
+article .joinus .joinus-left dl{
+	margin-left: 10px;
+	padding-top: 45px;
+	margin-right: 20px;
+}
+article .joinus .joinus-left dl dt{
+	margin-bottom: 20px;
+	color: white;
+}
+article .joinus .joinus-left dl dt a{
+	color: white;
+}
+article .joinus .joinus-left dl dd{
+	padding-top: 10px;
+}
+article .joinus .joinus-left dl dd a{
+	color: #ccc;
+}
+article .joinus .joinus-center{
+	float: left;
+	width: 206px;
+	height: 171px;
+	margin-top: 30px;
+	margin-left: 20px;
+	background: url(../img/qf_map.png);
+	position: relative;
+}
+article .joinus-center a{
+	color: white;
+	padding-right: 20px;
+	position: absolute;
+	background: url(../img/qf1_03.jpg) no-repeat 35px 7px;
+}
+article .joinus-center a:nth-child(1){
+	top: 150px;
+	left: 119px;
+}
+article .joinus-center a:nth-child(2){
+	top: 110px;
+	left: 90px;
+}
+article .joinus-center a:nth-child(3){
+	top: 99px;
+	left:30px;
+}
+article .joinus-center a:nth-child(4){
+	top: 85px;
+	left: 78px;
+}
+article .joinus-center a:nth-child(5){
+	top: 80px;
+	left: 140px;
+}
+article .joinus-center a:nth-child(6){
+	top:120px;
+	left: 130px;
+}
+article .joinus .joinus-right{
+	margin-left: 80px;
+	margin-top: 40px;
+}
+/*结尾，一般为版权*/
+footer{
+	width: 100%;
+	background-color: #242424;
+}
+/*提取公共代码*/
+footer .copyright,footer .copyright p{
+	height: 45px;
+}
+footer .copyright{
+	background-color: #0f0f0f;
+}
+/*提取公共代码*/
+footer .copyright p,footer .copyright p a{
+	color:#9c9c9c;
+}
+footer .copyright p{
+	line-height: 45px;
+	text-align: center;
+}
+footer .copyright p a{
+	text-decoration: none;
+}

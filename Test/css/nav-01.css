@@ -1,0 +1,41 @@
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			a {
+				text-decoration: none;
+				color: black;
+			}
+			
+			.nav-01 ul {
+				width: 500px;
+				height: 50px;
+				border-bottom: 3px solid orange;
+			}
+			
+			.nav-01 ul li {
+				float: left;
+				list-style: none;
+				text-align: center;
+				width: 100px;
+				height: 50px;
+				line-height: 50px;
+			}
+			
+			.nav-01 ul li a {
+				padding: 18px 34px;
+			}
+			
+			.nav-01 ul li a:nth-child(1) {
+				display: none;
+			}
+			
+			.nav-01 ul li:hover a:nth-child(2) {
+				display: none;
+			}
+			
+			.nav-01 ul li:hover a:nth-child(1) {
+				display: inline;
+				background-color: orange;
+			}
